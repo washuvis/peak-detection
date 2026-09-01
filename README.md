@@ -2,15 +2,15 @@
 
 ## Status
 
-**On hold / superseded.** This repository is an early project scaffold from the chromatography peak-detection work that later developed into Peak-a-boo. It does not contain a runnable implementation: the Python source files and notebooks currently tracked in this repository are empty placeholder files. Active development moved to the later Peak-a-boo repositories listed below.
+**On hold / superseded.** This repository is an early scaffold from the chromatography peak-detection work that later developed into Peak-a-boo. It does not contain a runnable implementation: the Python source files and notebooks currently tracked here are empty placeholder files. Active development moved to the maintained Peak-a-boo repositories listed below.
 
-If someone needs to continue from this repository specifically, the first step is to decide whether there is a historical reason to reconstruct this early structure. Otherwise, use the current Peak-a-boo repositories instead. Reconstructing this repository would require implementing the data-loading, preprocessing, peak-detection, comparison, and zoom components, adding an environment/requirements file, adding example data or clear data-access instructions, and adding tests and runnable examples.
+If this repository must be continued for a historical reason, a successor would need to reconstruct the intended data-loading, preprocessing, peak-detection, comparison, and zoom components, add a documented environment, provide approved example data or data-access instructions, and add tests and runnable examples. Otherwise, use the maintained Peak-a-boo repositories.
 
 ## Introduction
 
-This repository appears to have been created as an early code structure for chromatographic peak-detection work. Its directory names suggest planned components for loading reference data, preprocessing signals, detecting peaks, comparing detections with references, and examining local signal regions. However, the tracked source files and notebooks are empty, so the repository does not preserve an executable method or enough code to reproduce an analysis. The current Peak-a-boo repositories should be treated as the maintained continuation of this line of work.
+This repository was created as an early code structure for chromatographic peak-detection work. Its directory names indicate planned components for loading reference data, preprocessing signals, detecting peaks, comparing detections with references, and examining local signal regions. However, the tracked source files and notebooks are empty, so this repository does not preserve an executable method or enough code to reproduce an analysis. The current Peak-a-boo repositories should be treated as the maintained continuation of this work.
 
-## Repository Structure
+## Repo Structure
 
 ```text
 peak-detection/
@@ -46,11 +46,11 @@ The directory names describe the intended organization, but they should not be t
 
 ## Getting Started
 
-### Prerequisites and Needed Materials
+### Prerequisites & Needed Materials
 
 There is currently no runnable code in this repository and no `requirements.txt`, environment file, dataset, or command-line entry point. No package versions can be documented from the repository itself.
 
-For current Peak-a-boo development, use one of the maintained repositories in the **Related Repositories** section instead.
+For current Peak-a-boo development, use one of the maintained repositories in the **Related Repositories** section.
 
 ### Installation
 
@@ -60,29 +60,20 @@ No installation procedure is available because the repository contains only empt
 
 There is no executable usage workflow in the current repository state.
 
-If this historical scaffold must be reconstructed, first document the intended input data and expected outputs, then implement and test each component before adding usage instructions. Do not copy private research data into a public repository.
+If this historical scaffold is intentionally reconstructed, first document the exact input data, expected outputs, and purpose of each module. Then implement and test each component before adding runnable usage instructions. Do not copy private research data into this public repository.
 
 ## Related Repositories
 
-This repository is part of the same research lineage as the following Peak-a-boo repositories:
+All related Peak-a-boo repositories are maintained under the VIBE Lab `washuvis` GitHub organization:
 
-- [`washuvis/peak-a-boo`](https://github.com/washuvis/peak-a-boo)
-  - Public synthetic Peak-a-boo workbench.
-  - Use this repository for the public demonstration and current public-facing review interface.
+- [`washuvis/peak-a-boo`](https://github.com/washuvis/peak-a-boo) — public synthetic Peak-a-boo workbench and current public-facing review interface.
+- [`washuvis/chromato-peak-app`](https://github.com/washuvis/chromato-peak-app) — private internal analytical implementation containing the research-data pipeline, peak-detection code, candidate-level ML code, and dashboard.
+- [`washuvis/peakaboo-expert-study`](https://github.com/washuvis/peakaboo-expert-study) — expert-study platform for evaluating how people review difficult chromatographic peak cases under different information conditions.
+- [`washuvis/peak-detection`](https://github.com/washuvis/peak-detection) — this historical scaffold.
 
-- [`washuvis/chromato-peak-app`](https://github.com/washuvis/chromato-peak-app)
-  - Private internal analytical implementation.
-  - Contains the research-data pipeline, peak-detection code, candidate-level ML code, and internal dashboard.
+## Future Works
 
-- [`ghoshsaurav/peakaboo-expert-study`](https://github.com/ghoshsaurav/peakaboo-expert-study)
-  - Expert-study platform for evaluating how people review difficult chromatographic peak cases under different information conditions.
-
-- [`ghoshsaurav/peak-detection`](https://github.com/ghoshsaurav/peak-detection)
-  - This historical scaffold.
-
-## Future Work
-
-The recommended path is **not** to restart active development in this repository unless its early structure has a specific historical value. Current research should continue in the maintained Peak-a-boo repositories.
+The recommended path is not to restart active development in this repository unless its early structure has a specific historical value. Current research should continue in the maintained Peak-a-boo repositories.
 
 If this repository is intentionally revived, the minimum work would be to:
 
@@ -97,4 +88,4 @@ If this repository is intentionally revived, the minimum work would be to:
 
 ## Maintenance Note
 
-Keep this repository marked as historical/on hold unless active work resumes. If it is no longer needed after the lab confirms that the newer repositories preserve the relevant project history, it may be appropriate to archive it rather than maintain parallel implementations.
+Keep this repository marked as historical/on hold unless active work resumes. If the lab later confirms that the newer repositories preserve all relevant project history, archiving this repository may be more appropriate than maintaining it as an active codebase.
